@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "197305104249",
+    "project_id": "fir-uas-c1707",
+    "storage_bucket": "fir-uas-c1707.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197305104249:android:8552f0cd1319b188ad61a8",
+        "android_client_info": {
+          "package_name": "com.example.uas_c14190231"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197305104249-s4dtnqbb41d2o6t7u0rc8lkjappkflc1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZiuzhuts_LKq5z32B714l__1OsOO0s2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "197305104249-s4dtnqbb41d2o6t7u0rc8lkjappkflc1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

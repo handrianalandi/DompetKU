@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6f3f8"
+    tools:context=".tambahmain"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backlogo"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/btnBack"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/customhomeborder"
+            android:layout_marginTop="16dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Tanggal-Bulan-Tahun Transaksi"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tanggal"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:id="@+id/tvTanggal"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/customhomeborder"
+            android:layout_marginTop="16dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Nama Transaksi"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etNama"
+                android:textSize="16dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/customhomeborder"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Jumlah Transaksi"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Rp "
+                    android:textSize="16dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etJumlah"
+                    android:textSize="16dp"
+                    android:inputType="numberDecimal"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/customhomeborder"
+            android:layout_marginTop="16dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Kategori Transaksi"
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:spinnerMode="dropdown"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinnerborder"
+                android:id="@+id/spinnerKategori"
+
+                />
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custombuttonbackground"
+            android:text="Tambah Kategori Baru"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:id="@+id/btnTambahKategori"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/customhomeborder"
+            android:layout_marginTop="16dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Tipe Transaksi"
+                />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/rgTipe"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pemasukan"
+                    android:textSize="16dp"
+                    android:id="@+id/rbPemasukan"
+                    android:checked="true"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pengeluaran"
+                    android:textSize="16dp"
+                    android:id="@+id/rbPengeluaran"
+                    android:buttonTint="@color/black"
+                    />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custombuttonbackground"
+            android:text="Tambah Transaksi"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:id="@+id/btnTambah"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

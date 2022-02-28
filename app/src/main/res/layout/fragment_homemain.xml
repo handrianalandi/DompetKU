@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6f3f8"
+    tools:context=".homemain"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingVertical="16dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/customhomeborder"
+            android:orientation="vertical"
+            android:padding="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/tvCheer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3cb043"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Pemasukan Bulan Ini (Rp):"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tvPemasukan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Pengeluaran Bulan Ini (Rp):"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tvPengeluaran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!--    <androidx.appcompat.widget.AppCompatButton-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="80dp"-->
+        <!--        android:layout_marginHorizontal="16dp"-->
+        <!--        android:layout_marginTop="32dp"-->
+        <!--        android:background="@drawable/custombuttonbackground"-->
+        <!--        android:drawableLeft="@drawable/pengeluaranlogo"-->
+        <!--        android:padding="24dp"-->
+        <!--        android:text="Tambah Pengeluaran"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/linearLayout"-->
+        <!--        tools:layout_editor_absoluteX="16dp" -->
+        <!--        android:textStyle="bold"-->
+        <!--        android:textSize="16dp"-->
+        <!--        android:id="@+id/btnPengeluaran"-->
+        <!--        />-->
+
+        <!--    <androidx.appcompat.widget.AppCompatButton-->
+        <!--        android:id="@+id/btnPemasukan"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="80dp"-->
+        <!--        android:layout_marginHorizontal="16dp"-->
+        <!--        android:layout_marginTop="16dp"-->
+        <!--        android:background="@drawable/custombuttonbackground"-->
+        <!--        android:drawableLeft="@drawable/pemasukanlogo"-->
+        <!--        android:padding="24dp"-->
+        <!--        android:text="Tambah Pemasukan"-->
+        <!--        android:textSize="16dp"-->
+        <!--        android:textStyle="bold"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/btnPengeluaran" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/btnLaporan"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_marginHorizontal="16dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:background="@drawable/custombuttonbackground"-->
+<!--            android:drawableLeft="@drawable/laporanlogo"-->
+<!--            android:padding="24dp"-->
+<!--            android:text="Lihat Laporan Harian"-->
+<!--            android:textSize="16dp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />-->
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnTambah"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custombuttonbackground"
+            android:drawableLeft="@drawable/addlogo"
+            android:padding="24dp"
+            android:text="Tambah Transaksi"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="500dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/customhomeborder"
+            android:orientation="vertical"
+            android:padding="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnTambah"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Transaksi Hari ini"
+                    android:layout_weight="1"
+                    android:id="@+id/btnHariIni"
+                    android:background="@drawable/custombuttonbackground"
+                    android:backgroundTint="#e6f3f8"
+                    android:layout_marginRight="4dp"
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/custombuttonbackground"
+                    android:backgroundTint="#e6f3f8"
+                    android:text="Transaksi Bulan ini"
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/btnBulanIni"
+                    />
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custombuttonbackground"
+                android:text="Ganti Tanggal Transaksi"
+                android:backgroundTint="#e6f3f8"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:drawableRight="@drawable/datelogo"
+                android:id="@+id/btnSetTanggal"
+                android:paddingRight="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tvTanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTransaksi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnLaporan" />
+        </LinearLayout>
+
+<!--        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:backgroundTint="#03f3f3"-->
+<!--            android:text="Tambah Transaksi"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginBottom="24dp"-->
+<!--            android:layout_marginRight="24dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
